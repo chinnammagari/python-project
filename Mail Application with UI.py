@@ -87,7 +87,6 @@ class MailApp:
         smtp_user = self.smtp_user_entry.get()
         smtp_password = self.smtp_password_entry.get()
 
-        # For simplicity, skipping actual database storage
         if smtp_server and smtp_port and smtp_user and smtp_password:
             self.send_email(smtp_server, smtp_port, smtp_user, smtp_password)
         else:
